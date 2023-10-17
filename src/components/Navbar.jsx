@@ -24,8 +24,8 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <div className="mx-7">
-          <h4 className="text-4xl uppercase font-bold">
-            A<span className="text-cyan-600">le</span>x
+          <h4 className="text-4xl font-bold">
+            n<span className="text-pink-600">uz</span>z
           </h4>
         </div>
         <div
@@ -35,7 +35,7 @@ const Navbar = () => {
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
-              <li key={i} className="px-6 hover:text-cyan-600">
+              <li key={i} className="px-6 hover:text-pink-600">
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
@@ -60,7 +60,7 @@ const Navbar = () => {
               <li
                 onClick={() => setOpen(false)}
                 key={i}
-                className="px-6 hover:text-cyan-600"
+                className="px-6 hover:text-pink-600"
               >
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
