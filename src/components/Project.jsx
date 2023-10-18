@@ -3,9 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/kiosaku.png";
 import project2 from "../assets/images/face-id.png";
 import project3 from "../assets/images/toko-online.jpg";
-import project4 from "../assets/images/project-4.jpg";
-import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -34,13 +31,13 @@ const Project = () => {
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="text-4xl font-semibold" data-aos="fade-in">
           My <span className="text-pink-600">Projects</span>
         </h3>
         {/* <p className="text-gray-400 mt-3 text-lg">My awesome works</p> */}
       </div>
       <br />
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
+      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative" data-aos="zoom-in" data-aos-delay="300">
         <div className="w-full">
           <Swiper
             slidesPerview={1.2}

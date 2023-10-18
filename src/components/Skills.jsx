@@ -6,27 +6,31 @@ const Skills = () => {
       logo: "logo-react",
       level: "Beginner",
       count: 40,
+      delay: "300"
     },
     {
       logo: "logo-css3",
       level: "Competent ",
       count: 60,
+      delay: "400"
     },
     {
       logo: "logo-javascript",
       level: "Proficient ",
       count: 80,
+      delay: "500"
     },
     {
       logo: "logo-laravel",
       level: "Expert",
       count: 90,
+      delay: "600"
     },
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="text-4xl font-semibold" data-aos="fade-in">
           My <span className="text-pink-600">Skills</span>
         </h3>
         {/* <p className="text-gray-400 mt-3 text-lg">My knowledge</p> */}
@@ -35,6 +39,7 @@ const Skills = () => {
             <div
               key={i}
               className="border-2 group border-pink-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              data-aos="zoom-in" data-aos-delay={skill.delay}
             >
               <div
                 style={{

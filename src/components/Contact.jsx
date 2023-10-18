@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="text-4xl font-semibold" data-aos="fade-in">
           Contact <span className="text-pink-600">Me</span>
         </h3>
         {/* <p className="text-gray-400 mt-3 text-lg">Get in touch</p> */}
@@ -22,7 +22,7 @@ const Contact = () => {
             <textarea placeholder="Your Message" rows={10}></textarea>
             <button className="btn-primary w-fit">Send Message</button>
           </form> */}
-          <div className="flex flex-col  gap-7 ">
+          <div className="flex flex-col gap-7" data-aos="zoom-in" data-aos-delay="300">
             {contact_info.map((contact, i) => (
               <div
                 key={i}

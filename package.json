@@ -1,6 +1,6 @@
 {
   "homepage": "https://mnuzrili.github.io/react-portfolio/",
-  "name": "vitereact",
+  "name": "portfolio-app",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^17.0.2",
     "react-awesome-button": "^6.5.1",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.3.0",
     "react-loader-spinner": "^5.1.2",
     "react-router-dom": "^6.2.1",
     "swiper": "^8.3.2"
