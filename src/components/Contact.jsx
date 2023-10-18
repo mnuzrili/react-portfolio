@@ -2,8 +2,7 @@ import React from "react";
 
 const Contact = () => {
   const contact_info = [
-    { logo: "mail", text: "muhammadnuzril2325@gmail.com" },
-    { logo: "logo-whatsapp", text: "085975202828" },
+    { logo: "mail", text: "muhammadnuzril2325@gmail.com" }
   ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
