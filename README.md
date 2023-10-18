@@ -1,2 +1,2 @@
-# react_portfolio
-responsive portfolio using react js, tailwind css, animate with AOS
+# React Portfolio
+Responsive portfolio using react js, tailwind css, animate with AOS
