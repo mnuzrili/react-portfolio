@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import hero from "../assets/images/hero.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Popup } from 'semantic-ui-react'
 
 const Hero = () => {
   useEffect(() => {
@@ -11,21 +12,25 @@ const Hero = () => {
   }, []);
   const social_media = [
     {
+      pop: "instagram",
       logo: "logo-instagram",
       link: "https://www.instagram.com/mnuzrili/",
       delay : "1000"
     },
     {
+      pop: "facebook",
       logo: "logo-facebook",
       link: "https://www.facebook.com/mnuzrili",
       delay : "1100"
     },
     {
+      pop: "linkedin",
       logo: "logo-linkedin",
       link: "https://www.linkedin.com/in/muhammad-nuzril-isro-66567a263/",
       delay : "1200"
     },
     {
+      pop: "github",
       logo: "logo-github",
       link: "https://github.com/mnuzrili",
       delay : "1300"
@@ -62,9 +67,15 @@ const Hero = () => {
                 key={x.logo}
                 className="text-gray-600 hover:text-white cursor-pointer" data-aos="zoom-in" data-aos-delay={x.delay}
               >
-                <a href={x.link} target="_blank">
-                  <ion-icon name={x.logo}></ion-icon>
-                </a>
+                <Popup
+                 key={x.pop}
+                 header={x.pop}
+                 trigger ={
+                    <a href={x.link} target="_blank">
+                    <ion-icon name={x.logo}></ion-icon>
+                    </a>
+                    }
+                />
               </div>
             ))}
           </div>
