@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/heronew3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Popup } from 'semantic-ui-react'
@@ -42,7 +42,7 @@ const Hero = () => {
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
       <div className="flex-1 flex items-center justify-center h-full" data-aos="fade-in">
-        <img src={hero} alt="" className="w-2/4 h-1/4 object-cover" />
+        <img src={hero} alt="" className="w-3/5 h-1/4 object-cover" />
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
